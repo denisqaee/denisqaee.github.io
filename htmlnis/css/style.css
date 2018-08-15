@@ -289,19 +289,19 @@ header .titles-box .social-icons a span {
 }
 
 .works .first section.item1 div {
-	background-image: url(img/img1.jpg);
+	background-image: url(../img/img1.jpg);
 }
 
 .works .first section.item2 div {
-	background-image: url(img/img2.jpg);
+	background-image: url(../img/img2.jpg);
 }
 
 .works .first section.item3 div {
-	background-image: url(img/img3.jpg);
+	background-image: url(../img/img3.jpg);
 }
 
 .works .first section.item4 div {
-	background-image: url(img/img4.png);
+	background-image: url(../img/img4.png);
 }
 
 /*ИНФО*/
