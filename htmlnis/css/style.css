@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700');
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+input:required {
+	background: blue;
+}
+
+/*ШАПКА*/
+header {
+	/*background-image: url(../img/head-bg.jpg);
+	background-size: cover;
+    background-position: 50% 100%;*/
+	width: 100%;
+}
+
+header .titles-box {
+    display: block;
+    position: relative;
+    top: 30%;
+    /*transform: translateY(-50%);*/
+
+    color: #fff;
+    font-size: 6em;
+}
+
+header .titles-box .title {
+	display: table;
+    border-bottom: 1px solid #00f1ff;
+}
+
+header .titles-box span { 
+	color: #00f1ff; 
+}
+
+header .titles-box .subtitle { 
+	font-size: 0.5em; 
+}
+
+header .titles-box .social-icons {
+	font-size: 0.5em;
+    margin-top: -15px;
+}
+
+header .titles-box .social-icons a {
+	color: #fff;
+
+	position: relative;
+	margin-right: 10px;
+}
+
+header .titles-box .social-icons a .fa {
+	-webkit-transition: all 0.7s ease;
+	-moz-transition: all 0.7s ease;
+	-ms-transition: all 0.7s ease;
+	-o-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+}
+
+header .titles-box .social-icons a:hover .fa {
+	color: #fff;
+
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+header .titles-box .social-icons a span {
+    display: none;
+    position: absolute;
+    top: -1.8em;
+    padding: 2px 6px;
+
+    font-size: 0.4em;
+    color: #fff;
+    white-space: nowrap;
+
+    background: #000000;
+    border-radius: 5px;
+}
+
+/*НАВЫКИ*/
+.skill-block {
+	padding-top: 5em;
+	padding-bottom: 5em;
+}
+
+.skill-block .row {
+	position: relative;
+    margin-top: 1.5em;
+}
+
+.skill-block .title {
+    display: table;
+    margin: auto;
+
+    font-size: 2.5em;
+
+    border-bottom: 3px solid #00f1ff
+}
+
+.skill-block ul.skills {
+	text-transform: uppercase;
+}
+
+.skill-block ul.skills li {
+	position: relative;
+    margin-top: 3.5em;
+    padding-left: 0;
+
+    height: 3em;
+    border-radius: 0px 4px 4px 0px;
+    background: #b9b7b7;
+    cursor: pointer;
+    opacity: 0.3;
+
+    -webkit-transition: all 0.7s ease;
+	-moz-transition: all 0.7s ease;
+	-ms-transition: all 0.7s ease;
+	-o-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+}
+
+.skill-block ul.skills li:hover {
+	background: #d6f1f3;
+	opacity: 1;
+}
+
+.skill-block ul.skills li:hover p.name {
+	color: #11ABB0;
+}
+
+.skill-block ul.skills li:hover span {
+	background: #11ABB0;
+}
+
+.skill-block ul.skills li.active {
+    right: -30px;
+    opacity: 1;
+}
+
+.skill-block ul.skills li.active p.name {
+    right: 0;
+
+    -webkit-transition: all 0.7s ease;
+	-moz-transition: all 0.7s ease;
+	-ms-transition: all 0.7s ease;
+	-o-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+}
+
+.skill-block ul.skills li .desc {
+	display: none;
+}
+
+.skill-block ul.skills li span {
+    display: table;
+
+	width: 0;
+    height: 100%;
+    border-radius: 4px 0px 0px 4px;
+    background: #333333;
+
+    -webkit-transition: all 0.7s ease;
+	-moz-transition: all 0.7s ease;
+	-ms-transition: all 0.7s ease;
+	-o-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+}
+
+.skill-block ul.skills li p.name {
+    position: absolute;
+	top: -1.5em;
+	
+    font-size: 1.5em;
+}
+
+.skill-desc {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 3.5em;
+}
+
+.skill-desc .block {
+    padding: 1.5em;
+
+    text-indent: 2em;
+    text-align: justify;
+}
+
+.skill-desc .block p {
+	font-size: 1.1em;
+}
+
+.skill-desc .block p:first-of-type {
+	margin-top: 1em;
+}
+
+.skill-desc .block span.name {
+	text-transform: uppercase;
+    font-size: 1.5em;
+
+    border-bottom: 1px solid #00f1ff;
+}
+
+/*РАБОТЫ*/
+.works > .title {
+    display: table;
+    margin: auto;
+
+    font-size: 2.5em;
+
+    border-bottom: 3px solid #00f1ff
+}
+
+.works .first {
+	margin-top: 2.5em;
+}
+
+.works .first section {
+	overflow: hidden;
+	padding: 0;
+}
+
+.works .first section article {
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+    padding: 10px 5px;
+    -webkit-transition: opacity 2s ease;
+    -moz-transition: opacity 2s ease;
+    -ms-transition: opacity 2s ease;
+    -o-transition: opacity 2s ease;
+    background: rgba(0, 0, 0, 0.71);
+    transition: opacity 2s ease;
+}
+
+.works .first section article p.title {
+	margin-bottom: 0;
+}
+
+.works .first section article p.subtitle {
+	font-size: 0.7em;
+}
+
+.works .first section:hover div {
+	transform: scale(1.1);
+	opacity: 0.3;
+}
+
+.works .first section:hover article {
+	opacity: 1;	
+}
+
+.works .first section a {
+	color: #000;
+}
+
+.works .first section div {
+	height: 100%;
+
+	background-size: cover;
+    background-position: center;
+
+	cursor: pointer;
+
+    -webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	-o-transition: all 2s ease;
+	transition: all 2s ease;
+}
+
+.works .first section.item1 div {
+	background-image: url(/img/img1.jpg);
+}
+
+.works .first section.item2 div {
+	background-image: url(/img/img2.jpg);
+}
+
+.works .first section.item3 div {
+	background-image: url(/img/img3.jpg);
+}
+
+.works .first section.item4 div {
+	background-image: url(/img/img4.png);
+}
+
+/*ИНФО*/
+.info {    
+	padding-top: 5em;
+    padding-bottom: 5em;
+
+	background: #191919;
+
+	color: #fff;
+}
+
+.info .titles {
+    display: table;
+    margin: auto;
+    margin-bottom: 1em;
+
+    font-size: 2.5em;
+	text-align: center;
+}
+
+.info .titles .title {
+    border-bottom: 3px solid #00f1ff
+}
+
+.info .titles .subtitle {
+    font-size: 0.6em;
+}
+
+.info form fieldset > div {
+	margin: 1.5em 0;
+}
+
+.info form label {
+	font-size: 1.4em;
+	padding: 0;
+}
+
+.info form button.submit {
+    padding: 1em 1.2em;
+
+	border: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px; 
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px; 
+    background: black;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.3em;
+    letter-spacing: 3px;
+
+    -webkit-transition: all 0.7s ease;
+	-moz-transition: all 0.7s ease;
+	-ms-transition: all 0.7s ease;
+	-o-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+}
+
+.info form button.submit:hover {
+	background: #fff;
+	color: #000;
+}
+
+.info form span.required {
+	color: #11ABB0;
+	font-size: 0.8em;
+}
+
+.info form input,
+.info form textarea {
+	padding: 1.2em 1.4em;
+
+	border: none;
+	background: #524f4f;
+}
+
+.info form input:focus {
+	outline: none;
+
+	background: #11ABB0;
+}
+
+.info form textarea:focus {
+	outline: none;
+
+	background: #11ABB0;
+}
+
+#image-loader {
+	margin-left: 2em;
+}
+
+/*ПОДВАЛ*/
+footer {
+	position: relative;
+	padding-top: 5em;
+	padding-bottom: 1em;
+
+	background: black;
+
+	text-align: center;
+}
+
+footer .social-icons {
+	font-size: 3em;
+}
+
+footer .social-icons a {
+	color: #524f4f;
+
+	position: relative;
+	margin: 0 0.5em;
+}
+
+footer .social-icons a .fa {
+	-webkit-transition: all 0.7s ease;
+	-moz-transition: all 0.7s ease;
+	-ms-transition: all 0.7s ease;
+	-o-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+}
+
+footer .social-icons a:hover .fa {
+	color: #fff;
+}
+
+footer .cr {
+	margin-top: 1em;
+
+	font-size: 1.2em;
+}
+
+footer .arrow-top {
+	position: absolute;
+	top: -0.7em;
+	left: 50%;
+	transform: translateX(-50%);
+
+	font-size: 5em;
+}
+
+footer .arrow-top a {
+	color: #524f4f;
+
+	-webkit-transition: all 0.7s ease;
+	-moz-transition: all 0.7s ease;
+	-ms-transition: all 0.7s ease;
+	-o-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+}
+
+footer .arrow-top a:hover {
+	color: #11ABB0;
+}
+
+/*МЕДИА*/
+@media (max-width: 1199px) {
+	body {
+		font-size: 13px !important;
+	}
+}
+
+@media (max-width: 991px) {
+	body {
+		font-size: 11px !important;
+	}
+}
+
+@media (max-width: 767px) {
+	body {
+		font-size: 8px !important;
+	}
+
+	header .titles-box .title {
+	    line-height: 1em;
+	    padding-bottom: 15px;
+	}
+
+	/*УМЕНИЯ*/
+	.skill-block ul.skills li.active,
+	.skill-block ul.skills li.active p.name {
+	    left: 0 !important;
+	}
+
+	.works .first section article {
+		font-size: 4em;
+	}
+
+	/*МОИ РАБОТЫ*/
+	.works .first section .fa {
+	    font-size: 5.5em;
+	}
+
+	.works .first section article {
+		opacity: 1;
+	}
+
+	/*ПОДВАЛ*/
+	.info form label {
+	    font-size: 1.4em;
+	}
+}
