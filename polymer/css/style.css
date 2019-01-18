@@ -1,0 +1,1612 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	background: url('../images/bg.png') #efeed9 no-repeat center 0;
+}
+
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.textup { text-transform: uppercase; }
+
+.bold {	font-weight: 700; }
+.light { font-weight: 300; }
+
+.text-white { color: #fff; }
+.text-black { color: #000; }
+.text-yellow { color: #ffca13; }
+.text-blue { color: #125c83; }
+.text-red { color: #ce4444; }
+
+.headline { font-size: 25px; }
+.subheadline { font-size: 20px; }
+
+.tape {
+	position: relative;
+    width: 1050px;
+    margin: 40px auto;
+    float: none;
+    padding: 5px;
+    background-color: #ce4444;
+    color: #fff;
+    box-shadow: 0px 9px 35px -8px #000;
+}
+
+.tape:before,
+.tape:after {
+	content: '';
+	position: absolute;
+	width: 161px;
+	height: 118px;
+	top: 0;
+	z-index: -1;
+}
+
+.tape:before {
+	background: url('../images/before-tape.png');
+	left: -35px;
+}
+
+.tape:after {
+	background: url('../images/after-tape.png');
+	right: -35px;
+}
+
+button, a {
+	-webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+button {
+	padding: 5px 15px;
+	background-color: #ffca13;
+	font-size: 17px;
+	border: 0;
+}
+
+button:hover {
+	background-color: #fff513;
+	color: #000;
+}
+
+button:focus {
+	outline: none;
+}
+
+button:active {
+    -webkit-box-shadow: inset 0 6px 10px rgba(0, 0, 0, 0.155);
+    box-shadow: inset 0 6px 10px rgba(0, 0, 0, 0.155);
+}
+
+input { font-size: 15px !important; }
+
+/*ШАПКА*/
+.header {
+	padding-top: 5px;
+}
+
+.header .logo-text {
+	margin-top: 35px;
+}
+
+.phone {
+	margin-top: 10px;
+}
+
+	.phone p {
+		position: relative;
+	    display: table;
+		left: 25px;
+		font-size: 25px;
+	}
+		.phone p:before {
+			content: url('../images/before-phone.png');
+			position: absolute;
+			left: -25px;
+			bottom: 5px;
+		}
+
+
+.header .description {
+	position: relative;
+	margin-top: 40px;
+	padding-top: 10px;
+	line-height: 30px;
+}
+	.header .description:before {
+		content: '';
+		background: url('../images/before-header-description.png') no-repeat;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 58;
+		height: 120;
+	}
+
+	.header .description:after {
+		content: '';
+		background: url('../images/after-header-description.png') no-repeat;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 58;
+		height: 120;
+	}
+
+.action div {
+	position: relative;
+	height: 216px;
+}
+	.action .block {
+		position: absolute;
+		display: table;
+        right: 67px;
+   	 	bottom: -55px;
+		/*background: url('../images/bg-action.png');*/
+		width: 268px;
+		height: 216px;
+	    /*padding: 20px 0px 0px 50px;*/
+	}
+		.action .block:before {
+		    content: '';
+		    background: url('../images/bg-action.png');
+		    position: absolute;
+		    width: 268px;
+		    height: 216px;
+		    z-index: -1;
+		}
+
+	.action p {
+		display: table;
+		margin: 0;
+	}
+		.action p.first {
+			margin-top: 20px;
+			margin-left: 50px;
+			font-size: 21px;
+		}
+		.action p.second {
+			margin-left: 50px;
+			font-size: 25px;
+		}
+		.action p.third {
+		    margin-left: 50px;
+			font-size: 17px;
+		}
+
+.callback-block {
+	margin-top: 40px;
+}
+
+.callback-block form {
+    padding: 23px;
+    background: url('../images/bg-form.png') no-repeat;
+    width: 364px;
+    box-shadow: 0px 0px 4px 0px #000;
+}
+	.callback-block form input {
+		margin-bottom: 10px;
+	}
+
+	.callback-block form button {
+		width: 100%;
+		margin-top: 10px;
+		background-color: #125c83;
+	}
+
+	.callback-block form button:hover {
+		color: #fff;
+		background-color: #2093bf;
+	}
+
+.advantages .tape {
+	margin-bottom: 0;
+}
+
+.advantages .headline .subheadline {
+	display: table;
+	margin: auto;
+    padding: 5px 35px;
+	background-color: #ce4444;
+	font-size: 17px;
+}
+
+.advantages .description {
+	margin-top: 40px;
+}
+	.advantages .description ul.list1 {
+		position: relative;
+		width: 180px;
+		float: left;
+	}
+		.advantages .description ul.list1:after {
+			content: '';
+			position: absolute;
+			background: url('../images/after-advantages-ul.png') no-repeat;
+			width: 448px;
+		    height: 629px;
+		    top: 30px;
+		    left: 50px;
+		    z-index: -1;
+		}	
+
+		.advantages .description ul.list1 li {
+			position: relative;
+			display: table;
+			margin-bottom: 75px;
+			padding: 7px;
+			background-color: #125c83;
+		    box-shadow: 1px 2px 21px -3px #000;
+		}
+			.advantages .description ul.list1 li.item1 {}
+			.advantages .description ul.list1 li.item2 { top: 5px; }
+			.advantages .description ul.list1 li.item3 { top: -10px; }
+			.advantages .description ul.list1 li.item4 { top: 12px; }
+			.advantages .description ul.list1 li.item5 {}
+			.advantages .description ul.list1 li.item6 {}
+
+	.advantages .description ul.list2 {
+		position: relative;
+		margin-top: 20px;
+		margin-left: 350px;
+		width: 460px;
+		float: left;
+	}
+		.advantages .description ul.list2 li:last-of-type {
+			top: 20px;
+		}
+
+		.advantages .description ul.list2 li {
+			position: relative;
+			margin-bottom: 20px;
+			left: 70px;
+			text-align: justify;
+		}
+			.advantages .description ul.list2 li:before {
+				content: '';
+				position: absolute;
+				width: 64px;
+				height: 58px;
+				top: 0;
+			    bottom: 0;
+			    left: -75px;
+			    margin: auto;
+			    background-repeat: no-repeat !important;
+			}
+				.advantages .description ul.list2 li.item1:before { background: url('../images/advantages-list2-item1.png') }
+				.advantages .description ul.list2 li.item2:before { background: url('../images/advantages-list2-item2.png') }
+				.advantages .description ul.list2 li.item3:before { background: url('../images/advantages-list2-item3.png') }
+				.advantages .description ul.list2 li.item4:before { background: url('../images/advantages-list2-item4.png') }
+				.advantages .description ul.list2 li.item5:before { background: url('../images/advantages-list2-item5.png') }
+				.advantages .description ul.list2 li.item6:before { background: url('../images/advantages-list2-item6.png') }
+				.advantages .description ul.list2 li.item7:before { background: url('../images/advantages-list2-item7.png') }
+				.advantages .description ul.list2 li.item8:before { background: url('../images/advantages-list2-item8.png') }
+
+	.any {
+		margin: auto;
+	    padding: 0px 35px;
+		width: 971px;
+		height: 346px;
+		background: url('../images/bg-any.png') no-repeat center 0;
+	}
+		.any .subheadline {
+			margin-top: 40px;
+		}
+
+/*ВЫГОДА*/
+.profit ul {
+	display: table;
+	margin: auto;
+	width: 1045px;
+	margin-bottom: 20px;
+}
+	.profit li {
+		display: inline-table;
+		margin: 30px 22px;
+		width: 197px;
+		font-size: 17px;
+	}
+		.profit li p.text1 {
+			margin-bottom: 0;
+			padding: 5px;
+			background-color: #ce4444;
+		}
+
+		.profit li p.text2 {
+			padding: 5px;
+			background-color: #125c83;			
+		}
+			.profit li p.text2 span {
+				color: #ffca13;
+			}
+
+		.profit li p.text3 {
+		}
+
+		.profit li p.img-block {    
+			margin-bottom: 0;
+			/*padding-top: 30px;
+   			padding-left: 20px;*/
+			background: url('../images/pattern-septik.png');
+		}
+
+		.profit li div.description {
+			display: none;
+		}
+			.profit li div.description .textd1 {
+				background: #ce4444;
+			    color: #fff;
+			    padding: 5px;
+			}
+
+			.profit li div.description .textd2 {
+				background: url('../images/pattern-septik.png');
+    			padding: 5px;
+			}
+
+			.profit li button.show-popup {
+			    margin-bottom: 10px;
+			    background-color: #125c83;
+			    color: #fff;
+			}
+				.profit li button.show-popup:hover {
+					background-color: #1f84b9;
+				}
+
+				.profit li button.show-popup:active {
+					-webkit-box-shadow: inset 0 6px 10px rgba(0, 0, 0, 0.155);
+    				box-shadow: inset 0 6px 10px rgba(0, 0, 0, 0.155);
+				}
+
+/*ЭТАПЫ*/
+.steps {
+	padding-bottom: 40px;
+}
+
+.steps .list {
+	margin-top: 80px;
+}
+	.steps .list li {
+		position: relative;
+		margin-bottom: 175px;
+	}
+		.steps .list li.item3 {
+			margin-bottom: 110px;
+		}
+
+		.steps .list li.item5 {
+			margin-bottom: 125px;
+		}
+
+		.steps .list li.item6 {
+			margin-bottom: 0;
+		}
+
+		.steps .list li.item7 {
+			top: -50px;
+			margin-bottom: 0;
+		}
+
+		.steps .list li:after {
+			content: '';
+			position: absolute;
+		}
+
+		.steps .list li.item1:after { 			
+			right: -30px;
+			width: 391px;
+			height: 101px;
+			background: url('../images/after-steps-list-item1.png') no-repeat center;
+		}
+		.steps .list li.item2:after { 		
+			left: 180px;	
+			width: 158px;
+			height: 173px;
+			background: url('../images/after-steps-list-item2.png') no-repeat center;
+		}
+		.steps .list li.item3:after {
+		    top: 280px;
+			left: 210px;
+			width: 141px;
+			height: 187px;
+			background: url('../images/after-steps-list-item3.png') no-repeat center;
+		}
+		.steps .list li.item4:after {
+		    top: 125px;
+    		left: 35px; 	
+			width: 221px;
+			height: 52px;
+			background: url('../images/after-steps-list-item4.png') no-repeat center;
+		}
+		.steps .list li.item5:after { 
+			top: -135px;
+    		left: 225px;		
+			width: 225px;
+			height: 61px;
+			background: url('../images/after-steps-list-item5.png') no-repeat center;
+		}
+		.steps .list li.item6:after {
+			right: 60px;
+    		top: 25px;
+			width: 25px;
+			height: 27px;
+			background: url('../images/after-steps-list-item6.png') no-repeat center;
+		}
+
+		.steps .list li p {
+			position: relative;
+		}
+			.steps .list li.item1 p { left: 215px; width: 145px; }
+			.steps .list li.item2 p { left: 180px; width: 270px; }
+			.steps .list li.item3 p { width: 310px; }
+			.steps .list li.item4 p { left: -40px; width: 265px; }
+			.steps .list li.item5 p { margin: auto; width: 180px; right: 47px; }
+			.steps .list li.item6 p { width: 290px; }
+			.steps .list li.item7 p { left: 100px; width: 255px; }
+
+			.steps .list li p:before {
+				content: '';
+				position: absolute;
+				width: 158px;
+				height: 158px;
+			}
+				.steps .list li.item1 p:before { 
+					left: -165px;
+					background: url('../images/before-steps-list-item1-p.png') no-repeat center; 
+				}
+				.steps .list li.item2 p:before { 
+					left: -165px;
+					background: url('../images/before-steps-list-item2-p.png') no-repeat center; 
+				}
+				.steps .list li.item3 p:before {
+					bottom: -165px;
+    				left: 60px;
+					background: url('../images/before-steps-list-item3-p.png') no-repeat center; 
+				}
+				.steps .list li.item4 p:before {
+				    right: -165px;
+    				top: 0;
+					background: url('../images/before-steps-list-item4-p.png') no-repeat center; 
+				}
+				.steps .list li.item5 p:before { 
+				    top: -165px;
+				    left: 0;
+				    right: 0;
+				    margin: auto;
+					background: url('../images/before-steps-list-item5-p.png') no-repeat center; 
+				}
+				.steps .list li.item6 p:before { 
+				    right: -165px;
+					background: url('../images/before-steps-list-item6-p.png') no-repeat center; 
+				}
+				.steps .list li.item7 p:before { 
+					left: -155px;
+					background: url('../images/before-steps-list-item7-p.png') no-repeat center; 
+				}
+
+				.steps .list li.item1 p:before,
+				.steps .list li.item2 p:before,
+				.steps .list li.item6 p:before,
+				.steps .list li.item7 p:before {
+					top: 0;
+					bottom: 0;
+					margin: auto;
+				}
+
+/*ОБРАТНАЯ СВЯЗЬ*/
+.callback-form {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background: url('../images/bg-pattern.png');
+}
+	.callback-form form {
+		margin-top: 30px;
+	}
+		.callback-form form input {			
+			margin-bottom: 20px;
+			/*padding: 18px;*/
+			height: 43px;
+		}
+
+		.callback-form form button {
+			display: table;
+			margin: auto;
+			padding: 5px 100px;
+		}
+
+
+/*ЛИДЕР*/
+.leader {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background: url('../images/bg-pattern.png');
+}
+	.leader .list ul {
+		display: table;
+		background: url('../images/cup.png') no-repeat center;
+	}
+		.leader .list li {
+			margin-bottom: 80px;
+			margin-top: 40px;
+			width: 50%;
+	    	float: left;
+		}
+			.leader .list li p {
+				position: relative;
+				padding: 15px;
+				width: 330px;
+				background-color: #4fb5d7;
+				border-radius: 6px;
+			    text-align: justify;
+    			text-indent: 20px;
+			}
+				.leader .list li.item1 p:after,
+				.leader .list li.item3 p:after {
+					content: '';
+					position: absolute;
+					background: url('../images/before-after-leader-list-p.png');
+					width: 79px;
+				    height: 45px;
+				    right: -79px;
+				}
+
+				.leader .list li.item2 p:before,
+				.leader .list li.item4 p:before {
+					content: '';
+					position: absolute;
+					background: url('../images/before-after-leader-list-p.png');
+					width: 79px;
+				    height: 45px;
+				    left: -79px;
+				}
+				.leader .list li.item1 p:after {
+				    top: 25px;
+				}
+
+				.leader .list li.item2 p:before {
+				    top: 25px;
+				    -webkit-transform: scale(1, -1);
+					-moz-transform: scale(1, -1);
+					-ms-transform: scale(1, -1);
+					-o-transform: scale(1, -1);
+					transform: scale(-1, 1);
+				}
+
+				.leader .list li.item3 p:after {
+				    bottom: 25px;
+				    -webkit-transform: scale(1, -1);
+					-moz-transform: scale(1, -1);
+					-ms-transform: scale(1, -1);
+					-o-transform: scale(1, -1);
+					transform: scale(1, -1);				
+				}
+
+				.leader .list li.item4 p:before {
+				    bottom: 25px;
+				    -webkit-transform: rotate(180deg);
+					-moz-transform: rotate(180deg);
+					-ms-transform: rotate(180deg);
+					-o-transform: rotate(180deg);
+					transform: rotate(180deg);					
+				}
+
+				.leader .list li.item2 p,
+				.leader .list li.item4 p {
+					float: right;
+				}
+
+.company .headline {
+	margin-bottom: 40px;
+}
+
+.reviews {
+	padding-bottom: 50px;
+}
+	.reviews .tape {
+		padding: 18px;
+	}
+
+	.reviews .headline {
+		margin-bottom: 50px;
+	}
+
+	.reviews .bxslider21 img {
+		border-radius: 45px;
+	}
+
+	.reviews .bxslider2 img {
+	    margin-right: 10px;
+		float: left;
+		border-radius: 70px;
+	}
+
+	.reviews .thumb {
+		margin-top: 60px;
+	}
+
+	.reviews .desc li div.content {
+		padding-top: 115px;
+    	padding-left: 65px;
+		background: url('../images/bg-reviews-desc.png') no-repeat center;
+		height: 317px;
+		font-size: 17px;
+	}
+		.reviews .desc li div.client-info {
+			display: table;
+			margin-top: 20px;
+			margin-right: 65px;
+			float: left;
+		}
+			.reviews .desc li p {
+				margin-bottom: 0;
+				line-height: 19px;
+			}
+
+		.reviews .desc li div.text {
+			margin-top: -50px;
+			width: 300px;
+			float: left;
+			text-align: justify;
+			text-indent: 20px;
+		}
+
+/*КОНТАКТЫ*/
+.contacts {
+	padding-bottom: 40px;
+}
+
+.contacts .tape {
+	padding: 18px;
+}
+
+.contacts .subheadline {
+	margin-bottom: 0;
+}
+
+.contacts .map {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.contacts .map .map1,
+.contacts .map .map2 {
+	margin-top: 20px;
+}
+
+.contacts form input {
+	/*padding: 20px;*/
+	height: 43px;
+}
+
+.contacts form button {
+	padding: 7px;
+	width: 100%;
+}
+
+
+/*ПОДВАЛ*/
+.footer {
+	padding-top: 20px;
+	padding-bottom: 20px;
+    color: #fff;
+    background: #000;
+}
+	.footer a {
+		text-decoration: none;
+	}
+
+	.footer a h4 {
+		display: inline;
+	}
+
+/*POPUP*/
+.input_not_validate {
+	background: #ffebe6;
+	border: 1px solid #eb5635;
+	box-shadow: 0px 0px 5px #eb5635;
+}
+
+#popup-bg,
+#popup-form,
+#popup-success {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+}
+
+#popup-bg {
+	background-color: rgba(0, 0, 0, 0.55);
+	cursor: pointer;
+	z-index: 5;
+}
+
+#popup-form {
+	align-items: center;
+	z-index: 10;
+}
+
+#popup-form form,
+#popup-success {
+	/*display: table;*/
+	height: 200px;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	background-color: #fff;
+	border-bottom: 5px solid #ffca13;
+	border-radius: 8px;
+	z-index: 10;
+}
+	#popup-form form {
+		position: relative;
+		display: table;
+		margin: auto;
+		padding: 10px;
+	    padding-top: 40px;
+	}
+
+	#popup-form p.close-popup {
+		position: absolute;
+		right: 13px;
+		top: 5px;
+		text-align: right;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+		#popup-form p.close-popup:hover {
+			text-decoration: none;
+		}
+
+		#popup-form p.text1 {
+			margin-bottom: 0;
+			padding: 5px;
+			background-color: #ce4444;
+		}
+
+		#popup-form p.text2 {
+			padding: 5px;
+			background-color: #125c83;			
+		}
+			#popup-form p.text2 span {
+				color: #ffca13;
+			}
+
+		#popup-form p.text3 {
+		}
+
+		#popup-form p.img-block {    
+			margin-bottom: 0;
+			/*padding-top: 30px;
+   			padding-left: 20px;*/
+			background: url('../images/pattern-septik.png');
+		}
+
+	#popup-form input {
+		margin-bottom: 10px;
+	}
+
+	#popup-form button {
+		margin-top: 10px;
+		width: 100%;
+	}
+
+	#popup-form .item-info {
+		display: none;
+	}
+
+#popup-success {
+	width: 215px;
+	height: 160px;
+	padding-top: 20px;
+}
+	#popup-success p {
+		    font-size: 25px;
+		}
+
+		#popup-success span,
+		#popup-success button {
+			display: block;
+			margin: 10px auto;
+		    font-size: 18px;
+		}
+
+/*MEDIA*/
+@media (min-width: 991px) and (max-width: 1199px) {
+	.tape {
+	    width: 875px;
+	}
+
+	.action .block {
+	    right: -27px;
+	}
+
+	.advantages .description ul.list2 {
+	    margin-left: 320px;
+	    width: 365px;
+	}
+
+	.any {
+	    width: 940px;
+	    background-size: 940px;
+	}
+
+	.profit ul {
+	    width: 870px;
+	}
+		.profit li {
+		    margin: 30px 10px;
+		    width: 197px;
+		    font-size: 17px;
+		}
+
+		.profit li img {
+			width: 40%
+		}
+
+	.steps .list li.item1 p {
+	    left: 150px;
+	}
+		.steps .list li.item1:after {
+		    right: -60px;
+		}
+
+	.steps .list li.item3 p:before {
+	    left: 55px;
+	}
+
+	.steps .list li.item4 p {
+	    left: 0px;
+	}
+
+		.steps .list li.item4:after {
+		    left: 86px;
+		}
+
+	.steps .list li.item5 p {
+	    right: -3px;
+	}
+
+		.steps .list li.item5:after {
+		    left: 193px;
+		    background-size: 175px;
+		}
+
+	.steps .list li.item6:after {
+	    right: -35px;
+	}
+
+	.steps .list li.item7 p {
+	    left: 180px;
+	}
+
+	.leader .list ul {
+	    background-size: 250px;
+        background-position-y: 112px;
+	}
+		.leader .list li p {
+		    width: 315px;
+		}
+
+	.reviews .desc li div.content {
+	    padding-left: 155px;
+	}
+		.reviews .desc li div.client-info {
+		    margin-right: 55px;
+		}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.tape {
+	    width: 660px;
+	}
+
+	.headline { font-size: 20px; }
+	.subheadline { font-size: 15px; }
+
+	.header .logo-text {
+	    margin-top: 15px;
+	}
+
+	.phone {
+		margin-top: 0;
+	    padding: 0;
+	}
+		.phone p {
+			margin-bottom: 0px;
+		    font-size: 18px;
+		}
+
+	.header button {
+		font-size: 15px;
+	}
+
+	.action div {
+	    position: relative;
+	    height: 235px;
+	}
+
+	.action .block {
+	    right: 20px;
+	}
+		.action .block:before {
+		    transform: scale(-1,1);
+		}
+
+	.action p.first,
+	.action p.second,
+	.action p.third {
+		margin-left: 60px;
+	}
+
+	.callback-block {
+		padding-left: 0;		
+	    margin-left: 0;
+	}
+		.callback-block form {
+		    background-size: 364px 212px;
+		}
+
+	.advantages .description ul.list1 {
+	    width: 150px;
+	}
+		.advantages .description ul.list1:after {
+		    background-size: 293px;
+		}
+
+	.advantages .description ul.list1 li {
+	    margin-bottom: 39px;
+        font-size: 13px;
+	}
+		.advantages .description ul.list1 li.item2 {
+		    top: 2px;
+		}
+
+		.advantages .description ul.list1 li.item3 {
+		    top: -4px;
+		}
+
+		.advantages .description ul.list1 li.item4 {
+		    top: 18px;
+		}
+
+	.advantages .description ul.list2 {
+	    margin-top: -4px;
+	    margin-left: 207px;
+	    width: 300px;
+	}
+		.advantages .description ul.list2 li {
+		    margin-bottom: 10px;
+        	font-size: 13px;
+		}
+
+		.advantages .description ul.list2 li:before {
+			background-size: 55px !important;
+		}
+
+	.any {
+		margin-top: 20px;
+		width: 720px;
+		height: 256px;
+	    background-size: 720px;
+	}
+		.any .subheadline {
+		    margin-top: 28px;
+		}
+
+	.profit ul {
+	    width: 720px;
+	}
+		.profit li {
+		    margin: 30px 10px;
+		    width: 160px;
+		    font-size: 15px;
+		}
+
+		.profit li img {
+			width: 40%
+		}
+
+	.steps .list {
+	    margin-top: 55px;
+	}
+		.steps .list li {
+			font-size: 18px;
+		}
+			.steps .list li:after {
+			    top: 40px;
+			    background-size: 70% !important;
+			}	
+
+			.steps .list li p:before {
+			    background-size: 70% !important;
+			}
+
+			.steps .list li.item1,
+			.steps .list li.item2 {
+				margin-bottom: 110px;
+			}
+				.steps .list li.item1:after {
+				    right: -95px;
+				}
+
+				.steps .list li.item2:after {
+				    left: 100px;
+				}
+
+			.steps .list li.item3:after {
+			    top: 141px;
+			    left: 130px;
+			}
+
+			.steps .list li.item4 {
+			    margin-bottom: 135px;
+			}
+
+			.steps .list li.item5 {
+			    margin-bottom: 75px;
+			}
+				.steps .list li.item5:after {
+				    top: -115px;
+				    left: 130px;
+				}
+
+			.steps .list li.item6:after {
+			    right: 10px;
+			}
+
+			.steps .list li.item7 {
+			    top: -20px;
+			}
+
+			.steps .list li.item1 p {
+			    left: 130px;
+			}
+				.steps .list li.item1 p:before,
+				.steps .list li.item2 p:before {
+				    left: -145px;
+				}
+
+			.steps .list li.item2 p {
+			    left: 135px;
+		        width: 200px;
+			}
+
+			.steps .list li.item3 p:before {
+			    bottom: -145px;
+			    left: 13px;
+			}
+
+			.steps .list li.item4 p {
+			    left: -40px;
+			    width: 200px;
+			}
+				.steps .list li.item4 p:before {
+				    right: -145px;
+				}
+
+			.steps .list li.item5 p {
+			    right: -10px;
+			}
+				.steps .list li.item5 p:before {
+				    top: -135px;
+				}
+
+			.steps .list li.item6 p {
+			    width: 190px;
+			}
+				.steps .list li.item6 p:before {
+				    right: -140px;
+				}
+
+			.steps .list li.item7 p {
+			    width: 185px;
+			}
+				.steps .list li.item7 p:before {
+				    left: -140px;
+				}
+
+	.leader .list ul {
+		background-size: 165px;
+    	background-position-y: 110px;
+		font-size: 13px;
+		line-height: 15px;
+	}
+		.leader .list li {
+		    margin-bottom: 45px;
+		}
+			.leader .list li p {
+			    width: 265px;
+			}
+
+	.reviews .desc li div.content {
+	    padding-left: 45px;
+	}
+
+	.reviews .desc li div.client-info {
+	    margin-right: 60px;
+	}
+
+	.contacts form input {
+	    padding: 17px;
+	}
+}
+
+@media (max-width: 767px) {
+	body {
+        background-size: 1700px;
+	}
+
+	.tape {
+	    width: 300px;
+        padding: 10px;
+	}
+
+	.headline { font-size: 17px; line-height: 20px; }
+	.subheadline { font-size: 12px; line-height: 15px; }
+
+	.header .info {
+		margin-top: 10px;
+	}
+
+	.header .logo {
+		padding-left: 0;
+	}
+		.header .logo img {
+			float: right;
+			width: 158px;
+		}
+
+	.header .logo-text {
+	    margin-top: -2px;
+	    padding-left: 0;
+	}
+		.header .logo-text p {
+        	width: 220px;	
+		}
+
+	.phone {
+		text-align: center;
+	}
+	.phone p {
+	    display: inline-block;
+        margin-right: 35px;
+	}
+
+	.header .description {
+	    margin-top: 10px;
+        padding: 5px;
+    	padding-bottom: 0px;
+	    min-height: 111px;
+	    background-color: rgba(0, 0, 0, 0.7);
+	    line-height: 23px;
+	}
+		.header .description:before {
+		    background-size: 58px 111px;
+		}
+
+		.header .description:after {
+		    background-size: 58px 111px;
+		}
+
+	.action .block {
+	    right: 12px;
+	    bottom: -22px;
+	}
+		.action .block:before {
+		    transform: scale(-1, 1);
+		}
+
+	.callback-block {
+		padding-left: 0;		
+	    margin-left: 0;
+	}	
+		.callback-block form {
+		    background-size: 364px 207px;
+		}
+			.callback-block form .subheadline {
+				font-size: 17px;
+			}
+
+	.advantages .headline .subheadline {
+		width: 275px;
+	}
+
+	.advantages .description ul.list1 {
+		width: 155px;
+	    float: none;
+	    margin: auto;
+	    left: -100px;
+	    font-size: 13px;
+	}		
+		.advantages .description ul.list1:after {
+		    background-size: 316px !important;
+   			width: 317px;
+		}
+
+		.advantages .description ul.list1 li {
+		    margin-bottom: 49px;
+		}
+
+	.advantages .description ul.list2 {
+	    float: none;
+	    margin: auto;
+	    width: 282px;
+    	left: -32px;
+	}
+
+	.any {
+	    padding-top: 20px;
+	    position: relative;
+	    margin-top: 40px;
+	    width: 353px;
+	    height: 186px;
+	    background: url('../images/bg-any1.png') no-repeat center 0;
+	    background-size: 352px 186px;
+	}
+		.any:before {
+			position: absolute;
+		    content: '';
+		    left: 0;
+		    bottom: 17px;
+		    background: url('../images/bg-any2.png') no-repeat center 0;
+		    background-size: 307px;
+		    width: 353px;
+		    height: 90px;
+		}
+
+		.any .subheadline {
+		    margin-top: 0;
+		    font-size: 15px;
+		}
+
+	.profit ul {
+		width: 450px;
+	}
+		.profit li {
+		    margin: 15px 4px;
+		}
+
+	.callback-form form button {
+	    font-size: 17px;
+	    line-height: inherit;
+	    width: 100%;
+	    padding: 5px 0;
+	}
+
+	.steps {
+		padding-bottom: 20px;
+	}
+		.steps .list {
+		    margin-top: 25px;
+		}
+			.steps .list li {
+				top: 0 !important;
+			  	margin-bottom: 35px !important;
+				font-size: 15px;
+			}
+				.steps .list li:after {
+				    content: none;
+				}	
+
+				.steps .list li p {
+			        width: 279px !important;
+   					left: 36px !important;
+				    text-align: justify;
+				    display: table;
+				    margin: auto;
+				    margin-bottom: 10px;
+				}
+					.steps .list li p:before {
+				        background-size: 40% !important;
+					    left: -125px !important;
+					    top: 0 !important;
+					    bottom: 0 !important;
+					    right: initial !important;
+					    margin: auto;
+					}
+
+	.leader .list ul {
+		background: none;
+	}
+		.leader .list li {
+		    width: 100%;
+		    margin-bottom: 0;
+		    margin-top: 0;
+		}
+			.leader .list li p {
+				width: 100%;
+			}
+				.leader .list li p:after {
+					content: none !important;
+				}
+
+				.leader .list li p:before {
+					content: none !important;
+				}
+
+	.company .headline {
+	    margin-top: 20px;
+   	 	margin-bottom: 20px;
+	}
+
+	.reviews .headline {
+		margin-bottom: 20px;
+	}
+
+	.reviews .thumb {
+	    margin-top: -30px;
+	}
+
+	.reviews .tape,
+	.contacts .tape {
+	    padding: 30px;
+	}
+
+	.reviews .desc li div.about {
+	    display: table;
+	    margin: auto;
+	    padding: 10px;
+	    background-color: #4fb4d7;
+	    border-radius: 50px;
+	}
+
+	.reviews .desc li div.content {
+		padding-top: 0;
+	    padding-left: 35px;
+	    background: none;
+        height: auto;
+	}
+
+	.reviews .desc li div.client-info {
+	    margin-right: 0;
+	}
+
+	.reviews .desc li div.text {
+	    padding: 20px;
+	    float: none;
+	    margin: auto;
+	    background-color: #30758c;
+	    border-radius: 30px;
+	}
+
+	.contacts .subheadline {
+		font-size: 18px;
+	}
+
+	.contacts .adress {
+		margin-top: 20px;
+	}
+
+	.contacts .map .map1,
+	.contacts .map .map2 {
+	    margin-bottom: 30px;
+	    margin-top: 10px;
+	}
+
+	.contacts form input {
+		margin-bottom: 10px;
+	}
+
+	.contacts form button {
+		margin-top: 10px;
+	}
+
+	.footer .container div {
+		text-align: center;
+	}
+
+	.profit ul {
+	    width: 360px;
+	}
+		.profit li {
+	        margin: 10px 5px;
+		    width: 170px;
+		    font-size: 14px;
+		}
+
+		.profit li img {
+			width: 40%
+		}
+}
+
+
+@media (max-width: 399px) {
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.tape {
+		width: 100%;
+	}
+		.tape:before,
+		.tape:after {
+			content: none;
+		}
+
+	.header .info {
+		margin-top: 0px;
+	}
+
+	.header .logo {
+	    width: 100%;
+		text-align: center;
+		padding-left: 15px;
+	}
+		.header .logo img {
+			float: none;
+    		margin: auto;
+		}
+
+	.header .logo-text {
+	    width: 100%;
+	    padding-left: 15px;
+	    margin-top: 10px;
+	}
+		.header .logo-text p {
+			width: auto;
+		}
+
+	.header .description {
+	    padding: 8px;
+	    padding-bottom: 1px;
+	}
+		.header .description:before,
+		.header .description:after {
+			content: none;
+		}
+
+	.phone p {
+	    margin-right: 25px;
+	}
+
+	.callback-block {
+		padding-right: 0;
+	}
+		.callback-block form {
+			width: 100%;
+			background-size: 100% 100%;
+		}
+
+	.advantages .headline .subheadline {
+		width: 100%;
+		padding: 7px;
+	}
+
+	.advantages .description ul.list1 {
+	    left: -55px;
+	}
+		.advantages .description ul.list1:after {
+		    width: 235px;
+		}
+
+	.advantages .description ul.list2 {
+	    width: 190px;
+	    left: -40px;
+	    font-size: 14px;
+	}
+
+	.advantages .description ul.list2 li:before {
+		left: -59px;
+		background-size: 80% !important;
+	}
+
+	.any {
+	    padding: 25px 5px;
+		width: 100%;
+	    height: 195px;
+	    background-size: 100% 100%;
+	}
+		.any:before {
+		    width: 90%;
+		    background-size: 100%;
+		    left: 0;
+		    right: 0;
+	        bottom: 12px;
+		    margin: auto;
+		}
+
+	.profit ul {
+		width: 100%;
+	}
+		.profit li {
+			display: block;
+    		margin: 10px auto;
+		}
+
+	.callback-form {
+		padding-top: 25px;
+    	padding-bottom: 25px;
+	}
+		.callback-form .headline p {
+			padding-right: 5px;
+			padding-left: 5px;
+		}
+
+		.callback-form form {
+			width: 100%;
+			margin-top: 15px;
+			margin-left: 0;
+		}
+
+	.steps {
+		padding-bottom: 0;
+	}
+		.steps .list {
+			margin-top: 0;
+		}
+			.steps .list li {
+			    margin-bottom: 20px !important;
+			}
+				.steps .list li p {
+					left: 25px !important;
+					width: 190px !important;
+					font-size: 14px;
+				}
+					.steps .list li p:before {
+						left: -110px !important;
+						background-size: 30% !important;
+					}
+	.leader {
+		padding-top: 20px;
+	}
+
+	.reviews .tape,
+	.contacts .tape {
+		padding: 10px;
+	}
+
+	.contacts .adress {
+		margin-top: 0;
+		padding: 5px;
+	}
+
+	.contacts .subheadline {
+	    line-height: 20px;
+	}
+
+	.contacts .map {
+	    margin-top: 20px;
+    	margin-bottom: 20px;
+	}
+
+	.contacts form div {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.reviews .bxslider2 img {
+		margin-right: 0;
+		float: none;
+	}
+
+	.reviews .desc li div.client-info {
+		text-align: center;
+	}
+
+	.reviews .desc li div.text {
+		width: 100%;
+	}
+
+	.reviews .headline {
+		margin-bottom: 0;
+	}
+
+	#popup-form {
+		width: 85%;
+	}
+}
