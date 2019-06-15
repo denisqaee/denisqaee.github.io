@@ -14,7 +14,7 @@ class Departments extends React.Component {
     return (
       <div>
         {this.props.departments.map(function (props) {
-          return <Department id={props.id} name_department={props.name_department} />;
+          return <Department key={props.id} id={props.id} name_department={props.name_department} />;
         })}
       </div>
     );
