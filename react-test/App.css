@@ -1,0 +1,68 @@
+.app > div {
+  height: 100vh;
+  display: flex;
+}
+
+.app > div > a {
+  width: 50%;
+  cursor: pointer;
+  background-color: rgb(0, 0, 0, 0.75);
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.app > div > section {
+    width: 50%;
+}
+
+.app > div > a:hover {
+  background-color: rgb(255, 255, 255, 0.3);
+  color: #000;
+}
+
+.app .error-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.75);
+  color: #fff;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+.app .departments > section {
+  width: 90vw;
+  background-image: none;
+  background-color: rgb(255, 255, 255, 0.3);
+}
+
+.app .departments > a {
+  width: 10vw;
+  font-size: 3em;
+}
+
+.app .departments > section:not(:last-child):not(:first-child) {
+  width: 80vw;
+}
+
+.view_departments a.department,
+.view_departments a.employee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.view_departments a.department:hover,
+.view_departments a.employee:hover {
+  background-color: rgb(0, 0, 0, 0.75);
+  color: #fff;
+}
