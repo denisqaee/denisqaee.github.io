@@ -1,0 +1,62 @@
+body {
+    margin: 0 auto;
+}
+
+button {
+    background-color: #5d8ea8;
+    color: #ffffff;
+    border: none;
+    padding: 10px 13px;
+    border-radius: 3px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.col {
+    float: left;
+}
+
+.header_container {
+    padding: 20px 0;
+}
+
+.header_logo {
+    width: 40%;
+}
+
+.header_callback {
+    width: 60%;
+}
+
+.header_callback_contacts {
+    width: 40%;
+}
+
+.header_callback_contacts:before {
+    content: url(../img/icon_callback_contacts.png);
+    float: left;
+    margin: 2px 15px;
+    padding-right: 15px;
+    border-right: 1px solid #00000057;
+}
+
+.header_callback_contacts p {
+    margin: 0;
+}
+
+.header_callback_contacts_worktime {
+    color: #595959;
+}
+
+.header_callback_contacts_phone {
+    font-weight: bold;
+}
+
+.header_callback_buttons {
+    width: 60%;
+}
