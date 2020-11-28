@@ -235,3 +235,7 @@ h1 {
 .products_container_items_item:hover .products_container_items_add {
     display: table;
 }
+
+.products_container_items_add:hover {
+    background: url('../img/bg_additem_buttons.png') #5d8ea8 top no-repeat;
+}
