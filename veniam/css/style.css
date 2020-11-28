@@ -203,13 +203,35 @@ h1 {
 .products_container_items_item {
     width: 30%;
     background-color: #ffffff;
-    padding: 15px;
-}
-
-.products_container_items_item2 {
-    margin: 0 20px;
+    cursor: pointer;
+    position: relative;
 }
 
 .products_container_items_img {
     text-align: center;
+    padding-top: 15px;
+    border-bottom: 1px solid rgba(0,0,0,.44);
+}
+
+.products_container_items_title {
+    padding: 15px;
+    color: #3d728e;
+}
+
+.products_container_items_price {
+    padding: 15px;
+}
+
+.products_container_items_add {
+    background: url('../img/bg_additem_buttons.png') #5d8ea8 top no-repeat;
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: none;
+}
+
+.products_container_items_item:hover .products_container_items_add {
+    display: table;
 }
