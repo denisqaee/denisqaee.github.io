@@ -5,34 +5,143 @@
         <title>VENIAM - Найдите для себя новую одежду</title>
 
         <link rel="stylesheet" href="css/style.css">
+    	<script type="text/javascript" src="js/script.js"></script>
     </head>
     <body>
-        <header class="header">
+        <div class="header">
             <div class="container header_container">
-                <div class="col header_logo">
+                <div class="header_logo">
                     <img src="img/logo.png" alt="VENIAM">
                 </div>
 
-                <div class="col header_callback">
-                    <div class="col header_callback_contacts">
+                <div class="header_callback">
+                    <div class="header_callback_contacts">
                         <p class="header_callback_contacts_worktime">С 9:00 до 18:00</p>
                         <p class="header_callback_contacts_phone">+7 (000) 000-00-00</p>
                     </div>
 
-                    <div class="col header_callback_buttons">
+                    <div class="header_callback_buttons">
                         <button type="button" class="button button_header_callback_buttons_callme">Перезвоните мне</button>
                         <button type="button" class="button button_header_callback_buttons_request">Оставить заявку</button>
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
 
-        <menu class="menu">
+        <div class="menu">
             <div class="container menu_container">
-                <ul>
+                <ul class="container menu_container_nav">
                     <li>О компании</li>
+                    <li class="menu_container_nav_subnav">Каталог</li>
+                    <li>Доставка и оплата</li>
+                    <li>Отзывы</li>
+                    <li>Новости</li>
+                    <li>Статьи</li>
+                    <li>Фотогалерея</li>
+                    <li>Контакты</li>
                 </ul>
             </div>
-        </menu>
+        </div>
+
+        <div class="slider">
+            <div class="container slider_container">
+                <div class="slider_container_headlines">
+                    <h1 class="slider_container_headlines_title">Найдите новую одежду</h1>
+                    <p class="slider_container_headlines_subtitle">Обновите ваш гардероб к новому сезону!</p>
+                </div>
+
+                <div class="slider_container_navpage">
+                    <div class="slider_container_navpage_buttons">
+                        <button type="button" class="button slider_container_navpage_buttons_leftbutton"></button>
+                        <button type="button" class="button slider_container_navpagee_buttons_rightbutton"></button>
+                    </div>
+                    <div class="slider_container_navpage_pagenumber">
+                        <p><b>1</b>/3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="desc">
+            <div class="container desc_container">
+                <div class="desc_container_text">
+                    <h1>Заголовок H1</h1>
+                    <p>
+                        Интернет-магазин одежды Stylecloth – это доступные цены, широкий, регулярно обновляемый ассортимент.
+                        В онлайн-каталоге Stylecloth представлено около 7000 ведущих брендов женской, мужской и детской одежды и обуви,
+                        электроники, книжной продукции, ювелирных изделий, игрушек и т.д.
+                        Для удобства пользования онлайн-каталог поделен на разделы, все товары можно сортировать по ряду критериев:
+                        цена, материал изготовления, сезонность, бренд.
+                    </p>
+                    <p>
+                        Интернет-магазин Stylecloth регулярно проводит масштабные распродажи, в рамках которых купить одежду и
+                        обувь становится еще реальнее. Чтобы быть в курсе предстоящих скидок или появления в ассортименте новых
+                        моделей одежды от любимых брендов, достаточно подписаться на email-рассылку магазина.
+                        Дополнительные выгодные условия действуют для постоянных покупателей Wildberries – персональная скидка,
+                        зависящая от процента выкупа вещей.
+                    </p>
+                </div>
+
+                <div class="desc_container_img">
+                    <img src="./img/img_desc.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="products">
+            <div class="container products_container">
+                <p class="products_container_title">Хиты продаж</p>
+
+                <div class="products_container_items">
+                    <div class="products_container_items_item products_container_items_item1">
+                        <div class="products_container_items_add">
+                            <div class="products_container_items_img">
+                                <img src="./img/item1.jpg" alt="">
+                            </div>
+
+                            <div class="products_container_items_title">
+                                Плотная рубашка из эластичной джинсовой ткани
+                            </div>
+
+                            <div class="products_container_items_price">
+                                <b>5 999</b>&#8381;
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products_container_items_item products_container_items_item2">
+                        <div class="products_container_items_add">
+                            <div class="products_container_items_img">
+                                <img src="./img/item1.jpg" alt="">
+                            </div>
+
+                            <div class="products_container_items_title">
+                                Плотная рубашка из эластичной джинсовой ткани
+                            </div>
+
+                            <div class="products_container_items_price">
+                                <b>5 999</b>&#8381;
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="products_container_items_item products_container_items_item3">
+                        <div class="products_container_items_add">
+                            <div class="products_container_items_img">
+                                <img src="./img/item1.jpg" alt="">
+                            </div>
+
+                            <div class="products_container_items_title">
+                                Плотная рубашка из эластичной джинсовой ткани
+                            </div>
+
+                            <div class="products_container_items_price">
+                                <b>5 999</b>&#8381;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
