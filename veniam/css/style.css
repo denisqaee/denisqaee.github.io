@@ -70,6 +70,7 @@ a {
 }
 
 .header_container {
+    position: relative;
     padding: 20px 0;
 }
 
@@ -479,7 +480,21 @@ a {
     padding: 4px 9px;
 }
 
+.header_container_menu_phone {
+    display: none;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: url('../img/icon_menu_phone.png') top no-repeat;
+    right: 10px;
+    top: 40px;
+}
+
 @media (max-device-width: 320px) {
+    .phone {
+        display: initial;
+    }
+
     .nophone {
         display: none;
     }
@@ -489,6 +504,15 @@ a {
     }
 
     .header_logo, .header_callback, .header_callback_buttons {
-        width: initial;
+        width: 100%;
+    }
+
+    .header_logo {
+        margin: 18px 0;
+    }
+
+    .header_callback_buttons .button {
+        margin: 5px 0;
+        padding: 20px;
     }
 }
