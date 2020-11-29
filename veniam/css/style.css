@@ -120,18 +120,61 @@ textarea {
 .menu_container_nav {
     list-style-type: none;
     justify-content: space-between;
-    padding: 25px 0;
+    padding: 2px 0 0 0;
 }
 
-.menu_container_nav li {
+.menu_container_nav .menu_container_nav_item {
     cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 25px 15px;
 }
 
-.menu_container_nav li:hover {
+.menu_container_nav .menu_container_nav_item:hover {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #3a4750;
+}
+
+.menu_container_nav li:active {
     text-decoration: underline;
 }
 
-.menu_container_nav_subnav {
+.menu_container_nav .menu_toggle {
+    cursor: default;
+}
+
+.menu_container_nav .menu_toggle:active {
+    text-decoration: none;
+}
+
+.menu_container_nav .menu_toggle:hover::after {
+    background: url(../img/icon_menu_toggle.png) bottom no-repeat;
+    margin: 0 0 0 10px;
+}
+
+.menu_container_nav .menu_toggle:after {
+    content: '';
+    background: url(../img/icon_menu_toggle.png) top no-repeat;
+    margin: 4px 0 0 10px;
+    width: 10px;
+    height: 6px;
+}
+
+.menu_container_nav_subnav_submenu {
+    position: absolute;
+    padding: 0;
+    list-style-type: none;
+    top: 0
+}
+
+.menu_container_nav_subnav_submenu_item {
+    width: 250px;
+    padding: 10px 0 10px 20px;
+}
+
+.menu_container_nav_subnav_submenu_separator {
 
 }
 
