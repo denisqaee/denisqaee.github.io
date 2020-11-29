@@ -1,39 +1,12 @@
-// READY
 $(document).ready(function(){
-
-	submit();
 });
 
-function submit() {
-	$('form').submit(function(){
-		var form = $(this);
-		var error = false;
+$(document).on('click', '.callback_modal_show', function () {
+	$('#background_modal').fadeIn(300);
+	$('.callback_modal').fadeIn(300);
+	$('.callback_modal').css("display", "flex");
+});
 
-		$('#image-loader').fadeIn();
-
-		form.find('input[type=text], input[type=phone], textarea').each( function(){
-			if ($(this).val() == '') {
-				$(this).addClass('input_not_validate');
-				error = true;
-			}
-		});
-
-		if (!error) {
-			var msg = form.serialize();
-
-			$.ajax({
-				type: "POST",
-				url: "contact.php",
-				data: msg,
-				success: function(data) {
-					$('#image-loader').fadeOut();
-				},
-				error:  function(){
-					$('#image-loader').fadeOut();
-				}
-			});
-		}
-
-		return false;
-	});
-}
+$(document).on('click', '.modal_close', function () {
+	$('.modal_closed').fadeOut(300);
+});
