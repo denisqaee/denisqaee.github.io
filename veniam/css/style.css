@@ -13,12 +13,21 @@ button {
     padding: 10px 13px;
     border-radius: 3px;
     cursor: pointer;
+    font-size: 15px;
 }
 
 button:hover {
     background-color: #ffffff;
     color: #5d8ea8;
     box-shadow: 0 0 0 1px #5d8ea8 inset;
+}
+
+button:active {
+    box-shadow: 0 0 2px 1px #5d8ea8 inset;
+}
+
+button:focus {
+    outline: 0;
 }
 
 p {
@@ -29,6 +38,24 @@ h1 {
     font-size: 50px;
     font-weight: 300;
     margin: 0;
+}
+
+input, textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #c6cfd4;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input:focus, textarea:focus {
+    outline: 0;
+    border: 1px solid #77abc4;
+    box-shadow: 0 0 3px 0px #77abc4;
+}
+
+textarea {
+    resize: none;
 }
 
 .container {
@@ -157,6 +184,10 @@ h1 {
     box-shadow: none;
 }
 
+.slider_container_navpage_buttons .button:active {
+    box-shadow: 0 0 2px 1px #5d8ea8 inset;
+}
+
 .desc_container {
     padding: 50px 0;
 }
@@ -198,6 +229,7 @@ h1 {
 .products_container_items {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .products_container_items_item {
@@ -205,6 +237,11 @@ h1 {
     background-color: #ffffff;
     cursor: pointer;
     position: relative;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.26);
+}
+
+.products_container_items_item:active {
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.26);
 }
 
 .products_container_items_img {
@@ -238,4 +275,50 @@ h1 {
 
 .products_container_items_add:hover {
     background: url('../img/bg_additem_buttons.png') #5d8ea8 top no-repeat;
+}
+
+.map_container {
+    position: relative;
+}
+
+.map_container_title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#map_container_callbackform {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    z-index: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: #e4e8eb;
+    padding: 25px 0;
+    width: 40%;
+}
+
+#map_container_callbackform input {
+    width: 80%;
+    height: 20px;
+    font-size: 15px;
+}
+
+#map_container_callbackform .map_container_callbackform_contactMessage {
+    height: 150px;
+    width: 80%;
+    font-size: 15px;
+}
+
+#image-loader {
+	margin-left: 2em;
+}
+
+.map_container_callbackform_submit {
+    padding: 15px 25px;
+}
+
+.map_container_callbackform_privacy {
+    margin: 15px 0 20px 0;
 }
